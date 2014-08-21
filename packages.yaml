@@ -1,0 +1,9 @@
+bees:
+  files:
+    blank.txt: file:///dev/null
+faces:
+  files:
+    blank2.txt: file:///dev/null
+  dependencies:
+    - bees
+

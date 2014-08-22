@@ -83,11 +83,12 @@ def get_dependencies(path):
     parser.close()
     return iter(deps)
 
-def install_by_name(pkg_db, name):
+def install_by_name(pkg_db, name, missing_dep=lambda x: None):
     try:
         package = pkg_db[name]
     except KeyError:
         print('Unknown package: {}'.format(name), file=sys.stderr)
+        missing_dep(name)
         return
     print('Installing package {}...'.format(name))
     base = os.path.join('components', name)
@@ -105,7 +106,7 @@ def install_by_name(pkg_db, name):
             dependencies.extend(get_dependencies(path))
     for dependency in dependencies:
         if not os.path.exists(os.path.join('components', dependency)):
-            install_by_name(pkg_db, dependency)
+            install_by_name(pkg_db, dependency, missing_dep=missing_dep)
 
 def main():
     options = docopt(__doc__, version=VERSION)
@@ -114,7 +115,13 @@ def main():
     if options['--database'] is not None:
         pkg_db.load(options['--database'])
     name = options['<component>']
-    install_by_name(pkg_db, name)
+    missing_deps = set()
+    install_by_name(pkg_db, name, missing_dep=missing_deps.add)
+    if missing_deps:
+        print("MISSING DEPENDENCIES:", file=sys.stderr)
+        for dep in missing_deps:
+            print(" - {}".format(dep), file=sys.stderr)
+        exit(1)
 
 if __name__ == '__main__':
     main()

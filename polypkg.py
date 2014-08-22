@@ -22,6 +22,7 @@ import html.parser
 import re
 import urllib.parse
 from urllib.parse import urljoin
+from termcolor import cprint, colored
 
 DEFAULT_DATABASE = os.path.join(os.path.dirname(__file__),
                                 'packages.yaml')
@@ -99,10 +100,10 @@ def install_by_name(pkg_db, name, missing_dep=lambda x: None):
     try:
         package = pkg_db[name]
     except KeyError:
-        print('Unknown package: {}'.format(name), file=sys.stderr)
+        cprint('Unknown package: {}'.format(name), 'red', attrs=['bold'], file=sys.stderr)
         missing_dep(name)
         return
-    print('Installing package {}...'.format(name))
+    print('Installing package {}...'.format(colored(name, 'blue')))
     base = os.path.join('components', name)
     if os.path.exists(base):
         print('Removing previous install...', file=sys.stderr)
@@ -116,7 +117,7 @@ def install_by_name(pkg_db, name, missing_dep=lambda x: None):
             if not os.path.exists(real_fn_dir):
                 os.makedirs(real_fn_dir)
         path = os.path.join(base, fn)
-        print('  • {}'.format(fn), file=sys.stderr)
+        print('  {} {}'.format(colored('•', 'green'), fn), file=sys.stderr)
         get(urljoin(package.get('base', '.'), source), path)
         if fn.endswith('.html'):
             # parse for import links
@@ -135,9 +136,9 @@ def main():
     missing_deps = set()
     install_by_name(pkg_db, name, missing_dep=missing_deps.add)
     if missing_deps:
-        print("MISSING DEPENDENCIES:", file=sys.stderr)
+        cprint("MISSING DEPENDENCIES", 'red', attrs=['bold'], file=sys.stderr)
         for dep in missing_deps:
-            print(" - {}".format(dep), file=sys.stderr)
+            cprint(" • {}".format(dep), 'red', file=sys.stderr)
         exit(1)
 
 if __name__ == '__main__':

@@ -115,3 +115,8 @@ core-icon-button:
     core-icon-button.html: github:///Polymer/core-icon-button/core-icon-button.html
     core-icon-button.css: github:///Polymer/core-icon-button/core-icon-button.css
 
+core-tooltip:
+  files:
+    core-tooltip.html: github:///Polymer/core-tooltip/core-tooltip.html
+    core-tooltip.css: github:///Polymer/core-tooltip/core-tooltip.css
+

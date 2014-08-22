@@ -210,3 +210,7 @@ core-localstorage:
   files:
     core-localstorage.html: github:///Polymer/core-localstorage/core-localstorage.html
 
+core-range:
+  files:
+    core-range.html: github:///Polymer/core-range/core-range.html
+

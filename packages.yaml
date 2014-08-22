@@ -222,6 +222,21 @@ core-transition:
     core-transition-css.html: core-transition-css.html
     core-transition-overlay.css: core-transition-overlay.css
     core-transition.html: core-transition.html
+firebase:
+  base: https://cdn.firebase.com/js/client/1.0.21/
+  files:
+    firebase.js: firebase.js
+firebase-element:
+  base: github:///Polymer/firebase-element/
+  files:
+    firebase-element.html: firebase-element.html
+    firebase-import.html: firebase-import.html
+    firebase-login.html: firebase-login.html
+    firebase-simple-login-import.html: firebase-simple-login-import.html
+firebase-simple-login:
+  base: https://cdn.firebase.com/js/simple-login/1.6.3/
+  files:
+    firebase-simple-login.js: firebase-simple-login.js
 paper-button:
   base: github:///Polymer/paper-button/
   files:

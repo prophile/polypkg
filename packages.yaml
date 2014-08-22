@@ -65,3 +65,44 @@ core-meta:
   files:
     core-meta.html: github:///Polymer/core-meta/core-meta.html
 
+core-dropdown:
+  files:
+    core-dropdown.html: github:///Polymer/core-dropdown/core-dropdown.html
+    core-dropdown.css: github:///Polymer/core-dropdown/core-dropdown.css
+
+core-icons:
+  files:
+    core-icons.html: github:///Polymer/core-icons/core-icons.html
+    av-icons.html: github:///Polymer/core-icons/av-icons.html
+    communication-icons.html: github:///Polymer/core-icons/communication-icons.html
+    device-icons.html: github:///Polymer/core-icons/device-icons.html
+    editor-icons.html: github:///Polymer/core-icons/editor-icons.html
+    hardware-icons.html: github:///Polymer/core-icons/hardware-icons.html
+    image-icons.html: github:///Polymer/core-icons/image-icons.html
+    maps-icons.html: github:///Polymer/core-icons/maps-icons.html
+    notification-icons.html: github:///Polymer/core-icons/notification-icons.html
+    png-icons.html: github:///Polymer/core-icons/png-icons.html
+    social-icons.html: github:///Polymer/core-icons/social-icons.html
+
+core-iconset-svg:
+  files:
+    core-iconset-svg.html: github:///Polymer/core-iconset-svg/core-iconset-svg.html
+
+core-popup-menu:
+  files:
+    core-popup-menu.html: github:///Polymer/core-popup-menu/core-popup-menu.html
+    core-popup-overlay.html: github:///Polymer/core-popup-menu/core-popup-overlay.html
+    core-popup-menu.css: github:///Polymer/core-popup-menu/core-popup-menu.css
+
+core-overlay:
+  files:
+    core-overlay.html: github:///Polymer/core-overlay/core-overlay.html
+    core-overlay-layer.html: github:///Polymer/core-overlay/core-overlay-layer.html
+    core-key-helper.html: github:///Polymer/core-overlay/core-key-helper.html
+
+core-transition:
+  files:
+    core-transition.html: github:///Polymer/core-transition/core-transition.html
+    core-transition-overlay.css: github:///Polymer/core-transition/core-transition-overlay.css
+    core-transition-css.html: github:///Polymer/core-transition/core-transition-css.html
+

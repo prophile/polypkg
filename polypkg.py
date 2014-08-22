@@ -107,7 +107,7 @@ def install_by_name(pkg_db, name, missing_dep=lambda x: None):
             if not os.path.exists(real_fn_dir):
                 os.makedirs(real_fn_dir)
         path = os.path.join(base, fn)
-        print('  Installing {}'.format(fn), file=sys.stderr)
+        print('  • {}'.format(fn), file=sys.stderr)
         get(source, path)
         if fn.endswith('.html'):
             # parse for import links

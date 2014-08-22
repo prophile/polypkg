@@ -134,3 +134,8 @@ core-media-query:
   files:
     core-media-query.html: github:///Polymer/core-media-query/core-media-query.html
 
+core-input:
+  files:
+    core-input.html: github:///Polymer/core-input/core-input.html
+    core-input.css: github:///Polymer/core-input/core-input.css
+

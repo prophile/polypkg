@@ -20,6 +20,12 @@ core-animated-pages:
     transitions/slide-from-right.html: transitions/slide-from-right.html
     transitions/slide-up.html: transitions/slide-up.html
     transitions/tile-cascade.html: transitions/tile-cascade.html
+core-animation:
+  base: github:///Polymer/core-animation/
+  files:
+    core-animation-group.html: core-animation-group.html
+    core-animation.html: core-animation.html
+    web-animations.html: web-animations.html
 core-collapse:
   base: github:///Polymer/core-collapse/
   files:
@@ -216,9 +222,115 @@ core-transition:
     core-transition-css.html: core-transition-css.html
     core-transition-overlay.css: core-transition-overlay.css
     core-transition.html: core-transition.html
+paper-button:
+  base: github:///Polymer/paper-button/
+  files:
+    paper-button.css: paper-button.css
+    paper-button.html: paper-button.html
+paper-checkbox:
+  base: github:///Polymer/paper-checkbox/
+  files:
+    paper-checkbox.css: paper-checkbox.css
+    paper-checkbox.html: paper-checkbox.html
+paper-dialog:
+  base: github:///Polymer/paper-dialog/
+  files:
+    paper-dialog-transition.css: paper-dialog-transition.css
+    paper-dialog-transition.html: paper-dialog-transition.html
+    paper-dialog.css: paper-dialog.css
+    paper-dialog.html: paper-dialog.html
+paper-dropdown:
+  base: github:///Polymer/paper-dropdown/
+  files:
+    paper-dropdown.css: paper-dropdown.css
+    paper-dropdown.html: paper-dropdown.html
+paper-elements:
+  base: github:///Polymer/paper-elements/
+  files:
+    paper-elements.html: paper-elements.html
+paper-fab:
+  base: github:///Polymer/paper-fab/
+  files:
+    paper-fab.css: paper-fab.css
+    paper-fab.html: paper-fab.html
+paper-focusable:
+  base: github:///Polymer/paper-focusable/
+  files:
+    paper-focusable.html: paper-focusable.html
+paper-icon-button:
+  base: github:///Polymer/paper-icon-button/
+  files:
+    paper-icon-button.css: paper-icon-button.css
+    paper-icon-button.html: paper-icon-button.html
+paper-input:
+  base: github:///Polymer/paper-input/
+  files:
+    paper-input.css: paper-input.css
+    paper-input.html: paper-input.html
+paper-item:
+  base: github:///Polymer/paper-item/
+  files:
+    paper-item.css: paper-item.css
+    paper-item.html: paper-item.html
+paper-menu-button:
+  base: github:///Polymer/paper-menu-button/
+  files:
+    paper-menu-button-transition.css: paper-menu-button-transition.css
+    paper-menu-button-transition.html: paper-menu-button-transition.html
+    paper-menu-button.css: paper-menu-button.css
+    paper-menu-button.html: paper-menu-button.html
+paper-progress:
+  base: github:///Polymer/paper-progress/
+  files:
+    paper-progress.css: paper-progress.css
+    paper-progress.html: paper-progress.html
+paper-radio-button:
+  base: github:///Polymer/paper-radio-button/
+  files:
+    paper-radio-button.css: paper-radio-button.css
+    paper-radio-button.html: paper-radio-button.html
+paper-radio-group:
+  base: github:///Polymer/paper-radio-group/
+  files:
+    paper-radio-group.html: paper-radio-group.html
+paper-ripple:
+  base: github:///Polymer/paper-ripple/
+  files:
+    paper-ripple.html: paper-ripple.html
+paper-shadow:
+  base: github:///Polymer/paper-shadow/
+  files:
+    paper-shadow.css: paper-shadow.css
+    paper-shadow.html: paper-shadow.html
+paper-slider:
+  base: github:///Polymer/paper-slider/
+  files:
+    paper-slider.css: paper-slider.css
+    paper-slider.html: paper-slider.html
+paper-tabs:
+  base: github:///Polymer/paper-tabs/
+  files:
+    paper-tab.css: paper-tab.css
+    paper-tab.html: paper-tab.html
+    paper-tabs.css: paper-tabs.css
+    paper-tabs.html: paper-tabs.html
+paper-toast:
+  base: github:///Polymer/paper-toast/
+  files:
+    paper-toast.css: paper-toast.css
+    paper-toast.html: paper-toast.html
+paper-toggle-button:
+  base: github:///Polymer/paper-toggle-button/
+  files:
+    paper-toggle-button.css: paper-toggle-button.css
+    paper-toggle-button.html: paper-toggle-button.html
 polymer:
   base: https://cdnjs.cloudflare.com/ajax/libs/polymer/0.3.4/
   files:
     platform.js: platform.js
     polymer.html: data:text/html;charset=utf-8;base64,PHNjcmlwdCBzcmM9InBvbHltZXIuanMiPjwvc2NyaXB0Pg==
     polymer.js: polymer.js
+web-animations-js:
+  base: github:///web-animations/web-animations-js/
+  files:
+    web-animations.js: web-animations.js

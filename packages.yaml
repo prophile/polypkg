@@ -168,3 +168,8 @@ core-toolbar:
     core-toolbar.html: github:///Polymer/core-toolbar/core-toolbar.html
     core-toolbar.css: github:///Polymer/core-toolbar/core-toolbar.css
 
+core-field:
+  files:
+    core-field.html: github:///Polymer/core-field/core-field.html
+    core-field.css: github:///Polymer/core-field/core-field.css
+

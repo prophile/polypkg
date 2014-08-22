@@ -106,3 +106,7 @@ core-transition:
     core-transition-overlay.css: github:///Polymer/core-transition/core-transition-overlay.css
     core-transition-css.html: github:///Polymer/core-transition/core-transition-css.html
 
+core-shared-lib:
+  files:
+    core-shared-lib.html: github:///Polymer/core-shared-lib/core-shared-lib.html
+

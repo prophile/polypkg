@@ -18,6 +18,7 @@ import os.path
 import shutil
 import sys
 import yaml
+import html.parser
 import re
 
 DEFAULT_DATABASE = os.path.join(os.path.dirname(__file__),
@@ -58,6 +59,30 @@ class PackageDatabase(Mapping):
     def __len__(self):
         return len(self.packages)
 
+class DependenciesParser(html.parser.HTMLParser):
+    def __init__(self, dependency, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.dependency = dependency
+
+    def handle_starttag(self, tag, attrs):
+        if tag != 'link':
+            return
+        attrs = dict(attrs)
+        if attrs.get('rel') != 'import':
+            return
+        match = re.match(r'^\.\./([a-zA-Z0-9_-]+)/.*$', attrs.get('href', ''))
+        if match is None:
+            return
+        self.dependency(match.group(1))
+
+def get_dependencies(path):
+    deps = set()
+    parser = DependenciesParser(deps.add)
+    with open(path) as f:
+        parser.feed(f.read())
+    parser.close()
+    return iter(deps)
+
 def install_by_name(pkg_db, name):
     try:
         package = pkg_db[name]
@@ -70,11 +95,14 @@ def install_by_name(pkg_db, name):
         print('Removing previous install...', file=sys.stderr)
         shutil.rmtree(base)
     os.makedirs(base)
+    dependencies = []
     for fn, source in package['files'].items():
         path = os.path.join(base, fn)
         print('  Installing {}'.format(fn), file=sys.stderr)
         rq.urlretrieve(source, path)
-    dependencies = package.get('dependencies', [])
+        if fn.endswith('.html'):
+            # parse for import links
+            dependencies.extend(get_dependencies(path))
     for dependency in dependencies:
         if not os.path.exists(os.path.join('components', dependency)):
             install_by_name(pkg_db, dependency)

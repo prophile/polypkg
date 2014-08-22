@@ -12,16 +12,34 @@ Options:
 """
 from collections.abc import Mapping
 from docopt import docopt
-from urllib.request import urlretrieve
+import urllib.request as rq
 import os
 import os.path
 import shutil
 import sys
 import yaml
+import re
 
 DEFAULT_DATABASE = os.path.join(os.path.dirname(__file__),
                                 'packages.yaml')
 VERSION = '0.0.1'
+GITHUB_URL = 'https://raw.githubusercontent.com/{user}/{project}/{branch}/{path}'
+
+# Github URL handler
+class Github(rq.BaseHandler):
+    def github_open(self, req):
+        match = re.match(r'^/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/(.+)$', req.selector)
+        if not match:
+            raise ValueError('Match failed on github path {}'.format(req.selector))
+        user = match.group(1)
+        project = match.group(2)
+        path = match.group(3)
+        branch = 'master'
+        full_url = GITHUB_URL.format(**locals())
+        return rq.urlopen(full_url)
+
+opener = rq.build_opener(Github())
+rq.install_opener(opener)
 
 class PackageDatabase(Mapping):
     def __init__(self):
@@ -58,7 +76,7 @@ def install_by_name(pkg_db, name):
     for fn, source in package['files'].items():
         path = os.path.join(base, fn)
         print('  Installing {}'.format(fn), file=sys.stderr)
-        urlretrieve(source, path)
+        rq.urlretrieve(source, path)
 
 def main():
     options = docopt(__doc__, version=VERSION)

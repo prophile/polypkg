@@ -4,4 +4,11 @@ polymer:
     polymer.js: https://cdnjs.cloudflare.com/ajax/libs/polymer/0.3.4/polymer.js
     platform.js: https://cdnjs.cloudflare.com/ajax/libs/polymer/0.3.4/platform.js
 
-
+core-splitter:
+  files:
+    core-splitter.html: github:///Polymer/core-splitter/core-splitter.html
+    core-splitter.css: github:///Polymer/core-splitter/core-splitter.css
+    handle.svg: github:///Polymer/core-splitter/handle.svg
+    handle-h.svg: github:///Polymer/core-splitter/handle-h.svg
+  dependencies:
+    - polymer

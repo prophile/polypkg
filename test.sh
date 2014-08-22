@@ -2,7 +2,7 @@
 set -e
 if [ -n "$1" ]; then
     echo "Testing package $1..."
-    ./polypkg.py "$1"
+    ./polypkg "$1"
     rm -rf components
 else
     if [ -e components ]; then

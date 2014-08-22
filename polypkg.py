@@ -20,12 +20,16 @@ import sys
 import yaml
 import html.parser
 import re
+import urllib.parse
 from urllib.parse import urljoin
 
 DEFAULT_DATABASE = os.path.join(os.path.dirname(__file__),
                                 'packages.yaml')
 VERSION = '0.0.1'
 GITHUB_URL = 'https://raw.githubusercontent.com/{user}/{project}/{branch}/{path}'
+
+urllib.parse.uses_relative.append('github')
+urllib.parse.uses_netloc.append('github')
 
 # Github URL handler
 class Github(rq.BaseHandler):

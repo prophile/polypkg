@@ -173,3 +173,7 @@ core-field:
     core-field.html: github:///Polymer/core-field/core-field.html
     core-field.css: github:///Polymer/core-field/core-field.css
 
+core-layout-grid:
+  files:
+    core-layout-grid.html: github:///Polymer/core-layout-grid/core-layout-grid.html
+

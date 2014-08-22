@@ -70,15 +70,19 @@ class DependenciesParser(html.parser.HTMLParser):
         self.dependency = dependency
 
     def handle_starttag(self, tag, attrs):
-        if tag != 'link':
-            return
         attrs = dict(attrs)
-        if attrs.get('rel') != 'import':
-            return
-        match = re.match(r'^\.\./([a-zA-Z0-9_-]+)/.*$', attrs.get('href', ''))
-        if match is None:
-            return
-        self.dependency(match.group(1))
+        if tag == 'link':
+            if attrs.get('rel') != 'import':
+                return
+            match = re.match(r'^\.\./([a-zA-Z0-9_-]+)/.*$', attrs.get('href', ''))
+            if match is None:
+                return
+            self.dependency(match.group(1))
+        elif tag == 'script':
+            match = re.match(r'^\.\./([a-zA-Z0-9_-]+)/.*$', attrs.get('src', ''))
+            if match is None:
+                return
+            self.dependency(match.group(1))
 
 def get_dependencies(path):
     deps = set()

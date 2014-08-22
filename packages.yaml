@@ -189,3 +189,21 @@ core-doc-viewer:
     elements/core-doc-toc.css: github:///Polymer/core-doc-viewer/elements/core-doc-toc.css
     elements/core-doc-toc.html: github:///Polymer/core-doc-viewer/elements/core-doc-toc.html
 
+core-animated-pages:
+  files:
+    core-animated-pages.css: github:///Polymer/core-animated-pages/core-animated-pages.css
+    core-animated-pages.html: github:///Polymer/core-animated-pages/core-animated-pages.html
+    transitions/cascade-transition.html: github:///Polymer/core-animated-pages/transitions/cascade-transition.html
+    transitions/core-transition-pages.html: github:///Polymer/core-animated-pages/transitions/core-transition-pages.html
+    transitions/cross-fade.html: github:///Polymer/core-animated-pages/transitions/cross-fade.html
+    transitions/hero-transition.html: github:///Polymer/core-animated-pages/transitions/hero-transition.html
+    transitions/hero-transition.css: github:///Polymer/core-animated-pages/transitions/hero-transition.css
+    transitions/list-cascade.html: github:///Polymer/core-animated-pages/transitions/list-cascade.html
+    transitions/scale-up.html: github:///Polymer/core-animated-pages/transitions/scale-up.html
+    transitions/slide-down.html: github:///Polymer/core-animated-pages/transitions/slide-down.html
+    transitions/slide-from-bottom.html: github:///Polymer/core-animated-pages/transitions/slide-from-bottom.html
+    transitions/slide-from-right.html: github:///Polymer/core-animated-pages/transitions/slide-from-right.html
+    transitions/slide-up.html: github:///Polymer/core-animated-pages/transitions/slide-up.html
+    transitions/tile-cascade.html: github:///Polymer/core-animated-pages/transitions/tile-cascade.html
+
+

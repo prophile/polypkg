@@ -16,3 +16,7 @@ core-ajax:
     core-ajax.html: github:///Polymer/core-ajax/core-ajax.html
     core-xhr.html: github:///Polymer/core-ajax/core-xhr.html
 
+core-drag-drop:
+  files:
+    core-drag-drop.html: github:///Polymer/core-drag-drop/core-drag-drop.html
+

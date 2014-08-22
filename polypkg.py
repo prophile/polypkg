@@ -83,6 +83,9 @@ def get_dependencies(path):
     parser.close()
     return iter(deps)
 
+def get(url, output):
+    rq.urlretrieve(url, output)
+
 def install_by_name(pkg_db, name, missing_dep=lambda x: None):
     try:
         package = pkg_db[name]
@@ -98,9 +101,14 @@ def install_by_name(pkg_db, name, missing_dep=lambda x: None):
     os.makedirs(base)
     dependencies = []
     for fn, source in package['files'].items():
+        fn_dir = os.path.dirname(fn)
+        if fn_dir != '':
+            real_fn_dir = os.path.join(base, fn_dir)
+            if not os.path.exists(real_fn_dir):
+                os.makedirs(real_fn_dir)
         path = os.path.join(base, fn)
         print('  Installing {}'.format(fn), file=sys.stderr)
-        rq.urlretrieve(source, path)
+        get(source, path)
         if fn.endswith('.html'):
             # parse for import links
             dependencies.extend(get_dependencies(path))

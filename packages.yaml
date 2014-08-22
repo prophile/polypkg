@@ -181,3 +181,11 @@ core-signals:
   files:
     core-signals.html: github:///Polymer/core-signals/core-signals.html
 
+core-doc-viewer:
+  files:
+    core-doc-viewer.html: github:///Polymer/core-doc-viewer/core-doc-viewer.html
+    elements/core-doc-page.css: github:///Polymer/core-doc-viewer/elements/core-doc-page.css
+    elements/core-doc-page.html: github:///Polymer/core-doc-viewer/elements/core-doc-page.html
+    elements/core-doc-toc.css: github:///Polymer/core-doc-viewer/elements/core-doc-toc.css
+    elements/core-doc-toc.html: github:///Polymer/core-doc-viewer/elements/core-doc-toc.html
+

@@ -206,4 +206,7 @@ core-animated-pages:
     transitions/slide-up.html: github:///Polymer/core-animated-pages/transitions/slide-up.html
     transitions/tile-cascade.html: github:///Polymer/core-animated-pages/transitions/tile-cascade.html
 
+core-localstorage:
+  files:
+    core-localstorage.html: github:///Polymer/core-localstorage/core-localstorage.html
 

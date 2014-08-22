@@ -27,26 +27,6 @@ from termcolor import cprint, colored
 DEFAULT_DATABASE = os.path.join(os.path.dirname(__file__),
                                 'packages.yaml')
 VERSION = '0.0.1'
-GITHUB_URL = 'https://raw.githubusercontent.com/{user}/{project}/{branch}/{path}'
-
-urllib.parse.uses_relative.append('github')
-urllib.parse.uses_netloc.append('github')
-
-# Github URL handler
-class Github(rq.BaseHandler):
-    def github_open(self, req):
-        match = re.match(r'^/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/(.+)$', req.selector)
-        if not match:
-            raise ValueError('Match failed on github path {}'.format(req.selector))
-        user = match.group(1)
-        project = match.group(2)
-        path = match.group(3)
-        branch = 'master'
-        full_url = GITHUB_URL.format(**locals())
-        return rq.urlopen(full_url)
-
-opener = rq.build_opener(Github())
-rq.install_opener(opener)
 
 class PackageDatabase(Mapping):
     def __init__(self):

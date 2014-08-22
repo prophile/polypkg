@@ -3,6 +3,7 @@
 import yaml
 import os.path
 import urllib.parse
+import re
 from copy import deepcopy
 
 urllib.parse.uses_relative.append('github')
@@ -19,12 +20,28 @@ def strip_prefix(prefix, url):
             return component
     return url
 
+GITHUB_URL = 'https://raw.githubusercontent.com/{user}/{project}/{branch}/{path}'
+
+def strip_github(url):
+    components = urllib.parse.urlparse(url)
+    if components.scheme != 'github':
+        return url
+    match = re.match('^/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/(.*)$', components.path)
+    if match is None:
+        raise ValueError('inscrutable github URL: {}'.format(url))
+    return GITHUB_URL.format(user=match.group(1),
+                             project=match.group(2),
+                             branch='master',
+                             path=match.group(3))
+
 def clean_package(value):
     backup = deepcopy(value)
     if 'base' in value:
         old_base = value['base']
         del value['base']
         value['files'] = {fn: urllib.parse.urljoin(old_base, val) for fn, val in value['files'].items()}
+    # Strip the github: URLs
+    value['files'] = {fn: strip_github(url) for fn, url in value['files'].items()}
     prefix = os.path.commonprefix(value['files'].values())
     if '/' not in prefix:
         return backup

@@ -10,14 +10,14 @@ Options:
   --version         Show version.
   --database <db>   Load a custom package database.
 """
-import yaml
+from collections.abc import Mapping
 from docopt import docopt
+from urllib.request import urlretrieve
 import os
 import os.path
-import sys
-from urllib.request import urlretrieve
 import shutil
-from collections.abc import Mapping
+import sys
+import yaml
 
 DEFAULT_DATABASE = os.path.join(os.path.dirname(__file__),
                                 'packages.yaml')

@@ -345,6 +345,8 @@ polymer:
     platform.js: platform.js
     polymer.html: data:text/html;charset=utf-8;base64,PHNjcmlwdCBzcmM9InBvbHltZXIuanMiPjwvc2NyaXB0Pg==
     polymer.js: polymer.js
+    polymer.js.map: polymer.js.map
+    platform.js.map: platform.js.map
 web-animations-js:
   base: https://raw.githubusercontent.com/web-animations/web-animations-js/master/
   files:

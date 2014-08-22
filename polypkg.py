@@ -3,7 +3,7 @@
 Sensible Polymer component database.
 
 Usage:
-  polypkg [options] <component>
+  polypkg [options] <component>...
 
 Options:
   -h --help         Show this screen.
@@ -127,9 +127,9 @@ def main():
     pkg_db.load(DEFAULT_DATABASE)
     if options['--database'] is not None:
         pkg_db.load(options['--database'])
-    name = options['<component>']
     missing_deps = set()
-    install_by_name(pkg_db, name, missing_dep=missing_deps.add)
+    for name in options['<component>']:
+        install_by_name(pkg_db, name, missing_dep=missing_deps.add)
     if missing_deps:
         cprint("MISSING DEPENDENCIES", 'red', attrs=['bold'], file=sys.stderr)
         for dep in missing_deps:

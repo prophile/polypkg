@@ -25,3 +25,43 @@ core-scroll-header-panel:
     core-scroll-header-panel.html: github:///Polymer/core-scroll-header-panel/core-scroll-header-panel.html
     core-scroll-header-panel.css: github:///Polymer/core-scroll-header-panel/core-scroll-header-panel.css
 
+core-menu:
+  files:
+    core-menu.html: github:///Polymer/core-menu/core-menu.html
+    core-menu.css: github:///Polymer/core-menu/core-menu.css
+    core-submenu.html: github:///Polymer/core-menu/core-submenu.html
+    core-submenu.css: github:///Polymer/core-menu/core-submenu.css
+
+core-selector:
+  files:
+    core-selector.html: github:///Polymer/core-selector/core-selector.html
+
+core-item:
+  files:
+    core-item.html: github:///Polymer/core-item/core-item.html
+    core-item.css: github:///Polymer/core-item/core-item.css
+
+core-collapse:
+  files:
+    core-collapse.html: github:///Polymer/core-collapse/core-collapse.html
+    core-collapse.css: github:///Polymer/core-collapse/core-collapse.css
+
+core-selection:
+  files:
+    core-selection.html: github:///Polymer/core-selection/core-selection.html
+
+core-icon:
+  files:
+    core-icon.html: github:///Polymer/core-icon/core-icon.html
+    core-icon.css: github:///Polymer/core-icon/core-icon.css
+
+core-iconset:
+  files:
+    core-iconset.html: github:///Polymer/core-iconset/core-iconset.html
+    my-icons.png: github:///Polymer/core-iconset/my-icons.png
+    my-icons-big.png: github:///Polymer/core-iconset/my-icons-big.png
+
+core-meta:
+  files:
+    core-meta.html: github:///Polymer/core-meta/core-meta.html
+

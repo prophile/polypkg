@@ -10,7 +10,6 @@ Options:
   --version         Show version.
   --database <db>   Load a custom package database.
 """
-
 import yaml
 from docopt import docopt
 import os
@@ -20,7 +19,8 @@ from urllib.request import urlretrieve
 import shutil
 from collections.abc import Mapping
 
-DEFAULT_DATABASE = os.path.join(os.path.dirname(__file__), 'packages.yaml')
+DEFAULT_DATABASE = os.path.join(os.path.dirname(__file__),
+                                'packages.yaml')
 VERSION = '0.0.1'
 
 class PackageDatabase(Mapping):
@@ -46,6 +46,9 @@ def install_by_name(pkg_db, name):
     except KeyError:
         print('Unknown package: {}'.format(name), file=sys.stderr)
         return
+    for dependency in package.get('dependencies', ()):
+        if not os.path.exists(os.path.join('components', dependency)):
+            install_by_name(pkg_db, dependency)
     print('Installing package {}...'.format(name))
     base = os.path.join('components', name)
     if os.path.exists(base):
@@ -56,9 +59,6 @@ def install_by_name(pkg_db, name):
         path = os.path.join(base, fn)
         print('  Installing {}'.format(fn), file=sys.stderr)
         urlretrieve(source, path)
-    for dependency in package.get('dependencies', ()):
-        if not os.path.exists(os.path.join('components', dependency)):
-            install_by_name(pkg_db, dependency)
 
 def main():
     options = docopt(__doc__, version=VERSION)

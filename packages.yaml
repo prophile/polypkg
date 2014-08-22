@@ -177,3 +177,7 @@ core-layout-grid:
   files:
     core-layout-grid.html: github:///Polymer/core-layout-grid/core-layout-grid.html
 
+core-signals:
+  files:
+    core-signals.html: github:///Polymer/core-signals/core-signals.html
+

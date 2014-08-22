@@ -125,3 +125,8 @@ core-pages:
     core-pages.html: github:///Polymer/core-pages/core-pages.html
     core-pages.css: github:///Polymer/core-pages/core-pages.css
 
+core-layout-trbl:
+  files:
+    core-layout-trbl.html: github:///Polymer/core-layout-trbl/core-layout-trbl.html
+    core-slide.html: github:///Polymer/core-layout-trbl/core-slide.html
+

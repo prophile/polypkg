@@ -214,3 +214,7 @@ core-range:
   files:
     core-range.html: github:///Polymer/core-range/core-range.html
 
+core-style:
+  files:
+    core-style.html: github:///Polymer/core-style/core-style.html
+

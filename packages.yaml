@@ -130,3 +130,7 @@ core-layout-trbl:
     core-layout-trbl.html: github:///Polymer/core-layout-trbl/core-layout-trbl.html
     core-slide.html: github:///Polymer/core-layout-trbl/core-slide.html
 
+core-media-query:
+  files:
+    core-media-query.html: github:///Polymer/core-media-query/core-media-query.html
+

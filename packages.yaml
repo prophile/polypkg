@@ -120,3 +120,8 @@ core-tooltip:
     core-tooltip.html: github:///Polymer/core-tooltip/core-tooltip.html
     core-tooltip.css: github:///Polymer/core-tooltip/core-tooltip.css
 
+core-pages:
+  files:
+    core-pages.html: github:///Polymer/core-pages/core-pages.html
+    core-pages.css: github:///Polymer/core-pages/core-pages.css
+

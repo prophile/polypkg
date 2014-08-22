@@ -12,7 +12,7 @@ Options:
 """
 from collections.abc import Mapping
 from docopt import docopt
-import urllib.request as rq
+import httplib2
 import os
 import os.path
 import shutil
@@ -22,6 +22,7 @@ import html.parser
 import re
 import urllib.parse
 from urllib.parse import urljoin
+from urllib.request import urlretrieve
 from termcolor import cprint, colored
 
 DEFAULT_DATABASE = os.path.join(os.path.dirname(__file__),
@@ -73,8 +74,17 @@ def get_dependencies(path):
     parser.close()
     return iter(deps)
 
+http_engine = None
 def get(url, output):
-    rq.urlretrieve(url, output)
+    try:
+        response, content = http_engine.request(url)
+        if response.status == 200:
+            with open(output, 'wb') as f:
+                f.write(content)
+        else:
+            raise KeyError('Could not retrieve {}, code={}'.format(url, response.status))
+    except httplib2.RelativeURIError:
+        urlretrieve(url, output)
 
 def install_by_name(pkg_db, name, missing_dep=lambda x: None):
     try:
@@ -107,7 +117,12 @@ def install_by_name(pkg_db, name, missing_dep=lambda x: None):
             install_by_name(pkg_db, dependency, missing_dep=missing_dep)
 
 def main():
+    global http_engine
     options = docopt(__doc__, version=VERSION)
+    COMPONENT_CACHE = '/tmp/.polypkg-component-cache'
+    if not os.path.exists(COMPONENT_CACHE):
+        os.makedirs(COMPONENT_CACHE)
+    http_engine = httplib2.Http(COMPONENT_CACHE)
     pkg_db = PackageDatabase()
     pkg_db.load(DEFAULT_DATABASE)
     if options['--database'] is not None:

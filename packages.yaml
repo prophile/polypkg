@@ -149,3 +149,22 @@ core-menu-button:
     core-menu-button.html: github:///Polymer/core-menu-button/core-menu-button.html
     core-menu-button.css: github:///Polymer/core-menu-button/core-menu-button.css
 
+core-scaffold:
+  files:
+    core-scaffold.html: github:///Polymer/core-scaffold/core-scaffold.html
+
+core-drawer-panel:
+  files:
+    core-drawer-panel.html: github:///Polymer/core-drawer-panel/core-drawer-panel.html
+    core-drawer-panel.css: github:///Polymer/core-drawer-panel/core-drawer-panel.css
+
+core-header-panel:
+  files:
+    core-header-panel.html: github:///Polymer/core-header-panel/core-header-panel.html
+    core-header-panel.css: github:///Polymer/core-header-panel/core-header-panel.css
+
+core-toolbar:
+  files:
+    core-toolbar.html: github:///Polymer/core-toolbar/core-toolbar.html
+    core-toolbar.css: github:///Polymer/core-toolbar/core-toolbar.css
+

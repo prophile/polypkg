@@ -20,6 +20,7 @@ import sys
 import yaml
 import html.parser
 import re
+from urllib.parse import urljoin
 
 DEFAULT_DATABASE = os.path.join(os.path.dirname(__file__),
                                 'packages.yaml')
@@ -108,7 +109,7 @@ def install_by_name(pkg_db, name, missing_dep=lambda x: None):
                 os.makedirs(real_fn_dir)
         path = os.path.join(base, fn)
         print('  • {}'.format(fn), file=sys.stderr)
-        get(source, path)
+        get(urljoin(package.get('base', '.'), source), path)
         if fn.endswith('.html'):
             # parse for import links
             dependencies.extend(get_dependencies(path))

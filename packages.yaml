@@ -12,3 +12,11 @@ core-splitter:
     handle-h.svg: github:///Polymer/core-splitter/handle-h.svg
   dependencies:
     - polymer
+
+core-ajax:
+  files:
+    core-ajax.html: github:///Polymer/core-ajax/core-ajax.html
+    core-xhr.html: github:///Polymer/core-ajax/core-xhr.html
+  dependencies:
+    - polymer
+

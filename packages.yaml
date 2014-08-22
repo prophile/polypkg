@@ -334,3 +334,7 @@ web-animations-js:
   base: github:///web-animations/web-animations-js/
   files:
     web-animations.js: web-animations.js
+x-gif:
+  base: https://raw.githubusercontent.com/geelen/x-gif/gh-pages/dist/
+  files:
+    x-gif.html: x-gif.html

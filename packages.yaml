@@ -1,225 +1,224 @@
+core-ajax:
+  base: github:///Polymer/core-ajax/
+  files:
+    core-ajax.html: core-ajax.html
+    core-xhr.html: core-xhr.html
+core-animated-pages:
+  base: github:///Polymer/core-animated-pages/
+  files:
+    core-animated-pages.css: core-animated-pages.css
+    core-animated-pages.html: core-animated-pages.html
+    transitions/cascade-transition.html: transitions/cascade-transition.html
+    transitions/core-transition-pages.html: transitions/core-transition-pages.html
+    transitions/cross-fade.html: transitions/cross-fade.html
+    transitions/hero-transition.css: transitions/hero-transition.css
+    transitions/hero-transition.html: transitions/hero-transition.html
+    transitions/list-cascade.html: transitions/list-cascade.html
+    transitions/scale-up.html: transitions/scale-up.html
+    transitions/slide-down.html: transitions/slide-down.html
+    transitions/slide-from-bottom.html: transitions/slide-from-bottom.html
+    transitions/slide-from-right.html: transitions/slide-from-right.html
+    transitions/slide-up.html: transitions/slide-up.html
+    transitions/tile-cascade.html: transitions/tile-cascade.html
+core-collapse:
+  base: github:///Polymer/core-collapse/
+  files:
+    core-collapse.css: core-collapse.css
+    core-collapse.html: core-collapse.html
+core-doc-viewer:
+  base: github:///Polymer/core-doc-viewer/
+  files:
+    core-doc-viewer.html: core-doc-viewer.html
+    elements/core-doc-page.css: elements/core-doc-page.css
+    elements/core-doc-page.html: elements/core-doc-page.html
+    elements/core-doc-toc.css: elements/core-doc-toc.css
+    elements/core-doc-toc.html: elements/core-doc-toc.html
+core-drag-drop:
+  base: github:///Polymer/core-drag-drop/
+  files:
+    core-drag-drop.html: core-drag-drop.html
+core-drawer-panel:
+  base: github:///Polymer/core-drawer-panel/
+  files:
+    core-drawer-panel.css: core-drawer-panel.css
+    core-drawer-panel.html: core-drawer-panel.html
+core-dropdown:
+  base: github:///Polymer/core-dropdown/
+  files:
+    core-dropdown.css: core-dropdown.css
+    core-dropdown.html: core-dropdown.html
+core-elements:
+  base: github:///Polymer/core-elements/
+  files:
+    core-elements.html: core-elements.html
+core-field:
+  base: github:///Polymer/core-field/
+  files:
+    core-field.css: core-field.css
+    core-field.html: core-field.html
+core-header-panel:
+  base: github:///Polymer/core-header-panel/
+  files:
+    core-header-panel.css: core-header-panel.css
+    core-header-panel.html: core-header-panel.html
+core-icon:
+  base: github:///Polymer/core-icon/
+  files:
+    core-icon.css: core-icon.css
+    core-icon.html: core-icon.html
+core-icon-button:
+  base: github:///Polymer/core-icon-button/
+  files:
+    core-icon-button.css: core-icon-button.css
+    core-icon-button.html: core-icon-button.html
+core-icons:
+  base: github:///Polymer/core-icons/
+  files:
+    av-icons.html: av-icons.html
+    communication-icons.html: communication-icons.html
+    core-icons.html: core-icons.html
+    device-icons.html: device-icons.html
+    editor-icons.html: editor-icons.html
+    hardware-icons.html: hardware-icons.html
+    image-icons.html: image-icons.html
+    maps-icons.html: maps-icons.html
+    notification-icons.html: notification-icons.html
+    png-icons.html: png-icons.html
+    social-icons.html: social-icons.html
+core-iconset:
+  base: github:///Polymer/core-iconset/
+  files:
+    core-iconset.html: core-iconset.html
+    my-icons-big.png: my-icons-big.png
+    my-icons.png: my-icons.png
+core-iconset-svg:
+  base: github:///Polymer/core-iconset-svg/
+  files:
+    core-iconset-svg.html: core-iconset-svg.html
+core-input:
+  base: github:///Polymer/core-input/
+  files:
+    core-input.css: core-input.css
+    core-input.html: core-input.html
+core-item:
+  base: github:///Polymer/core-item/
+  files:
+    core-item.css: core-item.css
+    core-item.html: core-item.html
+core-layout-grid:
+  base: github:///Polymer/core-layout-grid/
+  files:
+    core-layout-grid.html: core-layout-grid.html
+core-layout-trbl:
+  base: github:///Polymer/core-layout-trbl/
+  files:
+    core-layout-trbl.html: core-layout-trbl.html
+    core-slide.html: core-slide.html
+core-list:
+  base: github:///Polymer/core-list/
+  files:
+    core-list.css: core-list.css
+    core-list.html: core-list.html
+core-localstorage:
+  base: github:///Polymer/core-localstorage/
+  files:
+    core-localstorage.html: core-localstorage.html
+core-media-query:
+  base: github:///Polymer/core-media-query/
+  files:
+    core-media-query.html: core-media-query.html
+core-menu:
+  base: github:///Polymer/core-menu/
+  files:
+    core-menu.css: core-menu.css
+    core-menu.html: core-menu.html
+    core-submenu.css: core-submenu.css
+    core-submenu.html: core-submenu.html
+core-menu-button:
+  base: github:///Polymer/core-menu-button/
+  files:
+    core-menu-button.css: core-menu-button.css
+    core-menu-button.html: core-menu-button.html
+core-meta:
+  base: github:///Polymer/core-meta/
+  files:
+    core-meta.html: core-meta.html
+core-overlay:
+  base: github:///Polymer/core-overlay/
+  files:
+    core-key-helper.html: core-key-helper.html
+    core-overlay-layer.html: core-overlay-layer.html
+    core-overlay.html: core-overlay.html
+core-pages:
+  base: github:///Polymer/core-pages/
+  files:
+    core-pages.css: core-pages.css
+    core-pages.html: core-pages.html
+core-popup-menu:
+  base: github:///Polymer/core-popup-menu/
+  files:
+    core-popup-menu.css: core-popup-menu.css
+    core-popup-menu.html: core-popup-menu.html
+    core-popup-overlay.html: core-popup-overlay.html
+core-range:
+  base: github:///Polymer/core-range/
+  files:
+    core-range.html: core-range.html
+core-scaffold:
+  base: github:///Polymer/core-scaffold/
+  files:
+    core-scaffold.html: core-scaffold.html
+core-scroll-header-panel:
+  base: github:///Polymer/core-scroll-header-panel/
+  files:
+    core-scroll-header-panel.css: core-scroll-header-panel.css
+    core-scroll-header-panel.html: core-scroll-header-panel.html
+core-selection:
+  base: github:///Polymer/core-selection/
+  files:
+    core-selection.html: core-selection.html
+core-selector:
+  base: github:///Polymer/core-selector/
+  files:
+    core-selector.html: core-selector.html
+core-shared-lib:
+  base: github:///Polymer/core-shared-lib/
+  files:
+    core-shared-lib.html: core-shared-lib.html
+core-signals:
+  base: github:///Polymer/core-signals/
+  files:
+    core-signals.html: core-signals.html
+core-splitter:
+  base: github:///Polymer/core-splitter/
+  files:
+    core-splitter.css: core-splitter.css
+    core-splitter.html: core-splitter.html
+    handle-h.svg: handle-h.svg
+    handle.svg: handle.svg
+core-style:
+  base: github:///Polymer/core-style/
+  files:
+    core-style.html: core-style.html
+core-toolbar:
+  base: github:///Polymer/core-toolbar/
+  files:
+    core-toolbar.css: core-toolbar.css
+    core-toolbar.html: core-toolbar.html
+core-tooltip:
+  base: github:///Polymer/core-tooltip/
+  files:
+    core-tooltip.css: core-tooltip.css
+    core-tooltip.html: core-tooltip.html
+core-transition:
+  base: github:///Polymer/core-transition/
+  files:
+    core-transition-css.html: core-transition-css.html
+    core-transition-overlay.css: core-transition-overlay.css
+    core-transition.html: core-transition.html
 polymer:
   base: https://cdnjs.cloudflare.com/ajax/libs/polymer/0.3.4/
   files:
-    polymer.html: 'data:text/html;charset=utf-8;base64,PHNjcmlwdCBzcmM9InBvbHltZXIuanMiPjwvc2NyaXB0Pg=='
-    polymer.js: polymer.js
     platform.js: platform.js
-
-core-elements:
-  files:
-    core-elements.html: github:///Polymer/core-elements/core-elements.html
-
-core-splitter:
-  files:
-    core-splitter.html: github:///Polymer/core-splitter/core-splitter.html
-    core-splitter.css: github:///Polymer/core-splitter/core-splitter.css
-    handle.svg: github:///Polymer/core-splitter/handle.svg
-    handle-h.svg: github:///Polymer/core-splitter/handle-h.svg
-
-core-ajax:
-  files:
-    core-ajax.html: github:///Polymer/core-ajax/core-ajax.html
-    core-xhr.html: github:///Polymer/core-ajax/core-xhr.html
-
-core-drag-drop:
-  files:
-    core-drag-drop.html: github:///Polymer/core-drag-drop/core-drag-drop.html
-
-core-scroll-header-panel:
-  files:
-    core-scroll-header-panel.html: github:///Polymer/core-scroll-header-panel/core-scroll-header-panel.html
-    core-scroll-header-panel.css: github:///Polymer/core-scroll-header-panel/core-scroll-header-panel.css
-
-core-menu:
-  files:
-    core-menu.html: github:///Polymer/core-menu/core-menu.html
-    core-menu.css: github:///Polymer/core-menu/core-menu.css
-    core-submenu.html: github:///Polymer/core-menu/core-submenu.html
-    core-submenu.css: github:///Polymer/core-menu/core-submenu.css
-
-core-selector:
-  files:
-    core-selector.html: github:///Polymer/core-selector/core-selector.html
-
-core-item:
-  files:
-    core-item.html: github:///Polymer/core-item/core-item.html
-    core-item.css: github:///Polymer/core-item/core-item.css
-
-core-collapse:
-  files:
-    core-collapse.html: github:///Polymer/core-collapse/core-collapse.html
-    core-collapse.css: github:///Polymer/core-collapse/core-collapse.css
-
-core-selection:
-  files:
-    core-selection.html: github:///Polymer/core-selection/core-selection.html
-
-core-icon:
-  files:
-    core-icon.html: github:///Polymer/core-icon/core-icon.html
-    core-icon.css: github:///Polymer/core-icon/core-icon.css
-
-core-iconset:
-  files:
-    core-iconset.html: github:///Polymer/core-iconset/core-iconset.html
-    my-icons.png: github:///Polymer/core-iconset/my-icons.png
-    my-icons-big.png: github:///Polymer/core-iconset/my-icons-big.png
-
-core-meta:
-  files:
-    core-meta.html: github:///Polymer/core-meta/core-meta.html
-
-core-dropdown:
-  files:
-    core-dropdown.html: github:///Polymer/core-dropdown/core-dropdown.html
-    core-dropdown.css: github:///Polymer/core-dropdown/core-dropdown.css
-
-core-icons:
-  files:
-    core-icons.html: github:///Polymer/core-icons/core-icons.html
-    av-icons.html: github:///Polymer/core-icons/av-icons.html
-    communication-icons.html: github:///Polymer/core-icons/communication-icons.html
-    device-icons.html: github:///Polymer/core-icons/device-icons.html
-    editor-icons.html: github:///Polymer/core-icons/editor-icons.html
-    hardware-icons.html: github:///Polymer/core-icons/hardware-icons.html
-    image-icons.html: github:///Polymer/core-icons/image-icons.html
-    maps-icons.html: github:///Polymer/core-icons/maps-icons.html
-    notification-icons.html: github:///Polymer/core-icons/notification-icons.html
-    png-icons.html: github:///Polymer/core-icons/png-icons.html
-    social-icons.html: github:///Polymer/core-icons/social-icons.html
-
-core-iconset-svg:
-  files:
-    core-iconset-svg.html: github:///Polymer/core-iconset-svg/core-iconset-svg.html
-
-core-popup-menu:
-  files:
-    core-popup-menu.html: github:///Polymer/core-popup-menu/core-popup-menu.html
-    core-popup-overlay.html: github:///Polymer/core-popup-menu/core-popup-overlay.html
-    core-popup-menu.css: github:///Polymer/core-popup-menu/core-popup-menu.css
-
-core-overlay:
-  files:
-    core-overlay.html: github:///Polymer/core-overlay/core-overlay.html
-    core-overlay-layer.html: github:///Polymer/core-overlay/core-overlay-layer.html
-    core-key-helper.html: github:///Polymer/core-overlay/core-key-helper.html
-
-core-transition:
-  files:
-    core-transition.html: github:///Polymer/core-transition/core-transition.html
-    core-transition-overlay.css: github:///Polymer/core-transition/core-transition-overlay.css
-    core-transition-css.html: github:///Polymer/core-transition/core-transition-css.html
-
-core-shared-lib:
-  files:
-    core-shared-lib.html: github:///Polymer/core-shared-lib/core-shared-lib.html
-
-core-icon-button:
-  files:
-    core-icon-button.html: github:///Polymer/core-icon-button/core-icon-button.html
-    core-icon-button.css: github:///Polymer/core-icon-button/core-icon-button.css
-
-core-tooltip:
-  files:
-    core-tooltip.html: github:///Polymer/core-tooltip/core-tooltip.html
-    core-tooltip.css: github:///Polymer/core-tooltip/core-tooltip.css
-
-core-pages:
-  files:
-    core-pages.html: github:///Polymer/core-pages/core-pages.html
-    core-pages.css: github:///Polymer/core-pages/core-pages.css
-
-core-layout-trbl:
-  files:
-    core-layout-trbl.html: github:///Polymer/core-layout-trbl/core-layout-trbl.html
-    core-slide.html: github:///Polymer/core-layout-trbl/core-slide.html
-
-core-media-query:
-  files:
-    core-media-query.html: github:///Polymer/core-media-query/core-media-query.html
-
-core-input:
-  files:
-    core-input.html: github:///Polymer/core-input/core-input.html
-    core-input.css: github:///Polymer/core-input/core-input.css
-
-core-list:
-  files:
-    core-list.html: github:///Polymer/core-list/core-list.html
-    core-list.css: github:///Polymer/core-list/core-list.css
-
-core-menu-button:
-  files:
-    core-menu-button.html: github:///Polymer/core-menu-button/core-menu-button.html
-    core-menu-button.css: github:///Polymer/core-menu-button/core-menu-button.css
-
-core-scaffold:
-  files:
-    core-scaffold.html: github:///Polymer/core-scaffold/core-scaffold.html
-
-core-drawer-panel:
-  files:
-    core-drawer-panel.html: github:///Polymer/core-drawer-panel/core-drawer-panel.html
-    core-drawer-panel.css: github:///Polymer/core-drawer-panel/core-drawer-panel.css
-
-core-header-panel:
-  files:
-    core-header-panel.html: github:///Polymer/core-header-panel/core-header-panel.html
-    core-header-panel.css: github:///Polymer/core-header-panel/core-header-panel.css
-
-core-toolbar:
-  files:
-    core-toolbar.html: github:///Polymer/core-toolbar/core-toolbar.html
-    core-toolbar.css: github:///Polymer/core-toolbar/core-toolbar.css
-
-core-field:
-  files:
-    core-field.html: github:///Polymer/core-field/core-field.html
-    core-field.css: github:///Polymer/core-field/core-field.css
-
-core-layout-grid:
-  files:
-    core-layout-grid.html: github:///Polymer/core-layout-grid/core-layout-grid.html
-
-core-signals:
-  files:
-    core-signals.html: github:///Polymer/core-signals/core-signals.html
-
-core-doc-viewer:
-  files:
-    core-doc-viewer.html: github:///Polymer/core-doc-viewer/core-doc-viewer.html
-    elements/core-doc-page.css: github:///Polymer/core-doc-viewer/elements/core-doc-page.css
-    elements/core-doc-page.html: github:///Polymer/core-doc-viewer/elements/core-doc-page.html
-    elements/core-doc-toc.css: github:///Polymer/core-doc-viewer/elements/core-doc-toc.css
-    elements/core-doc-toc.html: github:///Polymer/core-doc-viewer/elements/core-doc-toc.html
-
-core-animated-pages:
-  files:
-    core-animated-pages.css: github:///Polymer/core-animated-pages/core-animated-pages.css
-    core-animated-pages.html: github:///Polymer/core-animated-pages/core-animated-pages.html
-    transitions/cascade-transition.html: github:///Polymer/core-animated-pages/transitions/cascade-transition.html
-    transitions/core-transition-pages.html: github:///Polymer/core-animated-pages/transitions/core-transition-pages.html
-    transitions/cross-fade.html: github:///Polymer/core-animated-pages/transitions/cross-fade.html
-    transitions/hero-transition.html: github:///Polymer/core-animated-pages/transitions/hero-transition.html
-    transitions/hero-transition.css: github:///Polymer/core-animated-pages/transitions/hero-transition.css
-    transitions/list-cascade.html: github:///Polymer/core-animated-pages/transitions/list-cascade.html
-    transitions/scale-up.html: github:///Polymer/core-animated-pages/transitions/scale-up.html
-    transitions/slide-down.html: github:///Polymer/core-animated-pages/transitions/slide-down.html
-    transitions/slide-from-bottom.html: github:///Polymer/core-animated-pages/transitions/slide-from-bottom.html
-    transitions/slide-from-right.html: github:///Polymer/core-animated-pages/transitions/slide-from-right.html
-    transitions/slide-up.html: github:///Polymer/core-animated-pages/transitions/slide-up.html
-    transitions/tile-cascade.html: github:///Polymer/core-animated-pages/transitions/tile-cascade.html
-
-core-localstorage:
-  files:
-    core-localstorage.html: github:///Polymer/core-localstorage/core-localstorage.html
-
-core-range:
-  files:
-    core-range.html: github:///Polymer/core-range/core-range.html
-
-core-style:
-  files:
-    core-style.html: github:///Polymer/core-style/core-style.html
-
+    polymer.html: data:text/html;charset=utf-8;base64,PHNjcmlwdCBzcmM9InBvbHltZXIuanMiPjwvc2NyaXB0Pg==
+    polymer.js: polymer.js

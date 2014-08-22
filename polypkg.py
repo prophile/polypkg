@@ -11,19 +11,14 @@ Options:
   --database <db>   Load a custom package database.
 """
 
-from __future__ import print_function
-
 import yaml
 from docopt import docopt
 import os
 import os.path
 import sys
-import urllib
+from urllib.request import urlretrieve
 import shutil
-try:
-    from collections.abc import Mapping
-except ImportError:
-    from collections import Mapping
+from collections.abc import Mapping
 
 DEFAULT_DATABASE = os.path.join(os.path.dirname(__file__), 'packages.yaml')
 VERSION = '0.0.1'
@@ -60,7 +55,7 @@ def install_by_name(pkg_db, name):
     for fn, source in package['files'].items():
         path = os.path.join(base, fn)
         print('  Installing {}'.format(fn), file=sys.stderr)
-        urllib.urlretrieve(source, path)
+        urlretrieve(source, path)
     for dependency in package.get('dependencies', ()):
         if not os.path.exists(os.path.join('components', dependency)):
             install_by_name(pkg_db, dependency)

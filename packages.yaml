@@ -110,3 +110,8 @@ core-shared-lib:
   files:
     core-shared-lib.html: github:///Polymer/core-shared-lib/core-shared-lib.html
 
+core-icon-button:
+  files:
+    core-icon-button.html: github:///Polymer/core-icon-button/core-icon-button.html
+    core-icon-button.css: github:///Polymer/core-icon-button/core-icon-button.css
+

@@ -144,3 +144,8 @@ core-list:
     core-list.html: github:///Polymer/core-list/core-list.html
     core-list.css: github:///Polymer/core-list/core-list.css
 
+core-menu-button:
+  files:
+    core-menu-button.html: github:///Polymer/core-menu-button/core-menu-button.html
+    core-menu-button.css: github:///Polymer/core-menu-button/core-menu-button.css
+

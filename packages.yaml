@@ -20,3 +20,8 @@ core-drag-drop:
   files:
     core-drag-drop.html: github:///Polymer/core-drag-drop/core-drag-drop.html
 
+core-scroll-header-panel:
+  files:
+    core-scroll-header-panel.html: github:///Polymer/core-scroll-header-panel/core-scroll-header-panel.html
+    core-scroll-header-panel.css: github:///Polymer/core-scroll-header-panel/core-scroll-header-panel.css
+

@@ -139,3 +139,8 @@ core-input:
     core-input.html: github:///Polymer/core-input/core-input.html
     core-input.css: github:///Polymer/core-input/core-input.css
 
+core-list:
+  files:
+    core-list.html: github:///Polymer/core-list/core-list.html
+    core-list.css: github:///Polymer/core-list/core-list.css
+

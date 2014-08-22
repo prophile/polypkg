@@ -64,9 +64,6 @@ def install_by_name(pkg_db, name):
     except KeyError:
         print('Unknown package: {}'.format(name), file=sys.stderr)
         return
-    for dependency in package.get('dependencies', ()):
-        if not os.path.exists(os.path.join('components', dependency)):
-            install_by_name(pkg_db, dependency)
     print('Installing package {}...'.format(name))
     base = os.path.join('components', name)
     if os.path.exists(base):
@@ -77,6 +74,10 @@ def install_by_name(pkg_db, name):
         path = os.path.join(base, fn)
         print('  Installing {}'.format(fn), file=sys.stderr)
         rq.urlretrieve(source, path)
+    dependencies = package.get('dependencies', [])
+    for dependency in dependencies:
+        if not os.path.exists(os.path.join('components', dependency)):
+            install_by_name(pkg_db, dependency)
 
 def main():
     options = docopt(__doc__, version=VERSION)

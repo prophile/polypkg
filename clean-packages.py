@@ -52,6 +52,8 @@ GITHUB_API = Hammock('https://api.github.com')
 def get_latest_release(user, project):
     endpoint = GITHUB_API.repos(user, project).tags
     data = endpoint.GET(auth=github_auth()).json()
+    # accept only basic semantic versions
+    data = [entry for entry in data if re.match(r'\d+\.\d+\.\d+', entry['name'])]
     if len(data) == 0:
         return None
     return data[0]['name']

@@ -1,10 +1,10 @@
 core-ajax:
-  base: https://raw.githubusercontent.com/Polymer/core-ajax/0.3.5/
+  base: https://raw.githubusercontent.com/Polymer/core-ajax/0.4.0/
   files:
     core-ajax.html: core-ajax.html
     core-xhr.html: core-xhr.html
 core-animated-pages:
-  base: https://raw.githubusercontent.com/Polymer/core-animated-pages/0.3.5/
+  base: https://raw.githubusercontent.com/Polymer/core-animated-pages/0.4.0/
   files:
     core-animated-pages.css: core-animated-pages.css
     core-animated-pages.html: core-animated-pages.html
@@ -21,18 +21,18 @@ core-animated-pages:
     transitions/slide-up.html: transitions/slide-up.html
     transitions/tile-cascade.html: transitions/tile-cascade.html
 core-animation:
-  base: https://raw.githubusercontent.com/Polymer/core-animation/0.3.5/
+  base: https://raw.githubusercontent.com/Polymer/core-animation/0.4.0/
   files:
     core-animation-group.html: core-animation-group.html
     core-animation.html: core-animation.html
     web-animations.html: web-animations.html
 core-collapse:
-  base: https://raw.githubusercontent.com/Polymer/core-collapse/0.3.5/
+  base: https://raw.githubusercontent.com/Polymer/core-collapse/0.4.0/
   files:
     core-collapse.css: core-collapse.css
     core-collapse.html: core-collapse.html
 core-doc-viewer:
-  base: https://raw.githubusercontent.com/Polymer/core-doc-viewer/0.3.5/
+  base: https://raw.githubusercontent.com/Polymer/core-doc-viewer/0.4.0/
   files:
     core-doc-viewer.html: core-doc-viewer.html
     elements/core-doc-page.css: elements/core-doc-page.css
@@ -40,45 +40,45 @@ core-doc-viewer:
     elements/core-doc-toc.css: elements/core-doc-toc.css
     elements/core-doc-toc.html: elements/core-doc-toc.html
 core-drag-drop:
-  base: https://raw.githubusercontent.com/Polymer/core-drag-drop/0.3.5/
+  base: https://raw.githubusercontent.com/Polymer/core-drag-drop/0.4.0/
   files:
     core-drag-drop.html: core-drag-drop.html
 core-drawer-panel:
-  base: https://raw.githubusercontent.com/Polymer/core-drawer-panel/0.3.5/
+  base: https://raw.githubusercontent.com/Polymer/core-drawer-panel/0.4.0/
   files:
     core-drawer-panel.css: core-drawer-panel.css
     core-drawer-panel.html: core-drawer-panel.html
 core-dropdown:
-  base: https://raw.githubusercontent.com/Polymer/core-dropdown/0.3.5/
+  base: https://raw.githubusercontent.com/Polymer/core-dropdown/0.4.0/
   files:
     core-dropdown.css: core-dropdown.css
     core-dropdown.html: core-dropdown.html
 core-elements:
-  base: https://raw.githubusercontent.com/Polymer/core-elements/0.3.5/
+  base: https://raw.githubusercontent.com/Polymer/core-elements/0.4.0/
   files:
     core-elements.html: core-elements.html
 core-field:
-  base: https://raw.githubusercontent.com/Polymer/core-field/0.3.5/
+  base: https://raw.githubusercontent.com/Polymer/core-field/0.4.0/
   files:
     core-field.css: core-field.css
     core-field.html: core-field.html
 core-header-panel:
-  base: https://raw.githubusercontent.com/Polymer/core-header-panel/0.3.5/
+  base: https://raw.githubusercontent.com/Polymer/core-header-panel/0.4.0/
   files:
     core-header-panel.css: core-header-panel.css
     core-header-panel.html: core-header-panel.html
 core-icon:
-  base: https://raw.githubusercontent.com/Polymer/core-icon/0.3.5/
+  base: https://raw.githubusercontent.com/Polymer/core-icon/0.4.0/
   files:
     core-icon.css: core-icon.css
     core-icon.html: core-icon.html
 core-icon-button:
-  base: https://raw.githubusercontent.com/Polymer/core-icon-button/0.3.5/
+  base: https://raw.githubusercontent.com/Polymer/core-icon-button/0.4.0/
   files:
     core-icon-button.css: core-icon-button.css
     core-icon-button.html: core-icon-button.html
 core-icons:
-  base: https://raw.githubusercontent.com/Polymer/core-icons/0.3.5/
+  base: https://raw.githubusercontent.com/Polymer/core-icons/0.4.0/
   files:
     av-icons.html: av-icons.html
     communication-icons.html: communication-icons.html
@@ -92,22 +92,22 @@ core-icons:
     png-icons.html: png-icons.html
     social-icons.html: social-icons.html
 core-iconset:
-  base: https://raw.githubusercontent.com/Polymer/core-iconset/0.3.5/
+  base: https://raw.githubusercontent.com/Polymer/core-iconset/0.4.0/
   files:
     core-iconset.html: core-iconset.html
     my-icons-big.png: my-icons-big.png
     my-icons.png: my-icons.png
 core-iconset-svg:
-  base: https://raw.githubusercontent.com/Polymer/core-iconset-svg/0.3.5/
+  base: https://raw.githubusercontent.com/Polymer/core-iconset-svg/0.4.0/
   files:
     core-iconset-svg.html: core-iconset-svg.html
 core-input:
-  base: https://raw.githubusercontent.com/Polymer/core-input/0.3.5/
+  base: https://raw.githubusercontent.com/Polymer/core-input/0.4.0/
   files:
     core-input.css: core-input.css
     core-input.html: core-input.html
 core-item:
-  base: https://raw.githubusercontent.com/Polymer/core-item/0.3.5/
+  base: https://raw.githubusercontent.com/Polymer/core-item/0.4.0/
   files:
     core-item.css: core-item.css
     core-item.html: core-item.html
@@ -118,112 +118,112 @@ core-layout:
     core-layout.css: core-layout.css
     core-layout.html: core-layout.html
 core-layout-grid:
-  base: https://raw.githubusercontent.com/Polymer/core-layout-grid/0.3.5/
+  base: https://raw.githubusercontent.com/Polymer/core-layout-grid/0.4.0/
   files:
     core-layout-grid.html: core-layout-grid.html
 core-layout-trbl:
-  base: https://raw.githubusercontent.com/Polymer/core-layout-trbl/0.3.5/
+  base: https://raw.githubusercontent.com/Polymer/core-layout-trbl/0.4.0/
   files:
     core-layout-trbl.html: core-layout-trbl.html
     core-slide.html: core-slide.html
 core-list:
-  base: https://raw.githubusercontent.com/Polymer/core-list/0.3.5/
+  base: https://raw.githubusercontent.com/Polymer/core-list/0.4.0/
   files:
     core-list.css: core-list.css
     core-list.html: core-list.html
 core-localstorage:
-  base: https://raw.githubusercontent.com/Polymer/core-localstorage/0.3.5/
+  base: https://raw.githubusercontent.com/Polymer/core-localstorage/0.4.0/
   files:
     core-localstorage.html: core-localstorage.html
 core-media-query:
-  base: https://raw.githubusercontent.com/Polymer/core-media-query/0.3.5/
+  base: https://raw.githubusercontent.com/Polymer/core-media-query/0.4.0/
   files:
     core-media-query.html: core-media-query.html
 core-menu:
-  base: https://raw.githubusercontent.com/Polymer/core-menu/0.3.5/
+  base: https://raw.githubusercontent.com/Polymer/core-menu/0.4.0/
   files:
     core-menu.css: core-menu.css
     core-menu.html: core-menu.html
     core-submenu.css: core-submenu.css
     core-submenu.html: core-submenu.html
 core-menu-button:
-  base: https://raw.githubusercontent.com/Polymer/core-menu-button/0.3.5/
+  base: https://raw.githubusercontent.com/Polymer/core-menu-button/0.4.0/
   files:
     core-menu-button.css: core-menu-button.css
     core-menu-button.html: core-menu-button.html
 core-meta:
-  base: https://raw.githubusercontent.com/Polymer/core-meta/0.3.5/
+  base: https://raw.githubusercontent.com/Polymer/core-meta/0.4.0/
   files:
     core-meta.html: core-meta.html
 core-overlay:
-  base: https://raw.githubusercontent.com/Polymer/core-overlay/0.3.5/
+  base: https://raw.githubusercontent.com/Polymer/core-overlay/0.4.0/
   files:
     core-key-helper.html: core-key-helper.html
     core-overlay-layer.html: core-overlay-layer.html
     core-overlay.html: core-overlay.html
 core-pages:
-  base: https://raw.githubusercontent.com/Polymer/core-pages/0.3.5/
+  base: https://raw.githubusercontent.com/Polymer/core-pages/0.4.0/
   files:
     core-pages.css: core-pages.css
     core-pages.html: core-pages.html
 core-popup-menu:
-  base: https://raw.githubusercontent.com/Polymer/core-popup-menu/master/
+  base: https://raw.githubusercontent.com/Polymer/core-popup-menu/0.4.0/
   files:
     core-popup-menu.css: core-popup-menu.css
     core-popup-menu.html: core-popup-menu.html
     core-popup-overlay.html: core-popup-overlay.html
 core-range:
-  base: https://raw.githubusercontent.com/Polymer/core-range/0.3.5/
+  base: https://raw.githubusercontent.com/Polymer/core-range/0.4.0/
   files:
     core-range.html: core-range.html
 core-scaffold:
-  base: https://raw.githubusercontent.com/Polymer/core-scaffold/0.3.5/
+  base: https://raw.githubusercontent.com/Polymer/core-scaffold/0.4.0/
   files:
     core-scaffold.html: core-scaffold.html
 core-scroll-header-panel:
-  base: https://raw.githubusercontent.com/Polymer/core-scroll-header-panel/0.3.5/
+  base: https://raw.githubusercontent.com/Polymer/core-scroll-header-panel/0.4.0/
   files:
     core-scroll-header-panel.css: core-scroll-header-panel.css
     core-scroll-header-panel.html: core-scroll-header-panel.html
 core-selection:
-  base: https://raw.githubusercontent.com/Polymer/core-selection/0.3.5/
+  base: https://raw.githubusercontent.com/Polymer/core-selection/0.4.0/
   files:
     core-selection.html: core-selection.html
 core-selector:
-  base: https://raw.githubusercontent.com/Polymer/core-selector/0.3.5/
+  base: https://raw.githubusercontent.com/Polymer/core-selector/0.4.0/
   files:
     core-selector.html: core-selector.html
 core-shared-lib:
-  base: https://raw.githubusercontent.com/Polymer/core-shared-lib/0.3.5/
+  base: https://raw.githubusercontent.com/Polymer/core-shared-lib/0.4.0/
   files:
     core-shared-lib.html: core-shared-lib.html
 core-signals:
-  base: https://raw.githubusercontent.com/Polymer/core-signals/0.3.5/
+  base: https://raw.githubusercontent.com/Polymer/core-signals/0.4.0/
   files:
     core-signals.html: core-signals.html
 core-splitter:
-  base: https://raw.githubusercontent.com/Polymer/core-splitter/0.3.5/
+  base: https://raw.githubusercontent.com/Polymer/core-splitter/0.4.0/
   files:
     core-splitter.css: core-splitter.css
     core-splitter.html: core-splitter.html
     handle-h.svg: handle-h.svg
     handle.svg: handle.svg
 core-style:
-  base: https://raw.githubusercontent.com/Polymer/core-style/0.3.5/
+  base: https://raw.githubusercontent.com/Polymer/core-style/0.4.0/
   files:
     core-style.html: core-style.html
 core-toolbar:
-  base: https://raw.githubusercontent.com/Polymer/core-toolbar/0.3.5/
+  base: https://raw.githubusercontent.com/Polymer/core-toolbar/0.4.0/
   files:
     core-toolbar.css: core-toolbar.css
     core-toolbar.html: core-toolbar.html
 core-tooltip:
-  base: https://raw.githubusercontent.com/Polymer/core-tooltip/0.3.5/
+  base: https://raw.githubusercontent.com/Polymer/core-tooltip/0.4.0/
   files:
     core-tooltip.css: core-tooltip.css
     core-tooltip.html: core-tooltip.html
 core-transition:
-  base: https://raw.githubusercontent.com/Polymer/core-transition/0.3.5/
+  base: https://raw.githubusercontent.com/Polymer/core-transition/0.4.0/
   files:
     core-transition-css.html: core-transition-css.html
     core-transition-overlay.css: core-transition-overlay.css
@@ -233,7 +233,7 @@ firebase:
   files:
     firebase.js: firebase.js
 firebase-element:
-  base: https://raw.githubusercontent.com/Polymer/firebase-element/0.3.5/
+  base: https://raw.githubusercontent.com/Polymer/firebase-element/0.4.0/
   files:
     firebase-element.html: firebase-element.html
     firebase-import.html: firebase-import.html
@@ -244,120 +244,121 @@ firebase-simple-login:
   files:
     firebase-simple-login.js: firebase-simple-login.js
 paper-button:
-  base: https://raw.githubusercontent.com/Polymer/paper-button/0.3.5/
+  base: https://raw.githubusercontent.com/Polymer/paper-button/0.4.0/
   files:
     paper-button.css: paper-button.css
     paper-button.html: paper-button.html
 paper-checkbox:
-  base: https://raw.githubusercontent.com/Polymer/paper-checkbox/0.3.5/
+  base: https://raw.githubusercontent.com/Polymer/paper-checkbox/0.4.0/
   files:
     paper-checkbox.css: paper-checkbox.css
     paper-checkbox.html: paper-checkbox.html
 paper-dialog:
-  base: https://raw.githubusercontent.com/Polymer/paper-dialog/0.3.5/
+  base: https://raw.githubusercontent.com/Polymer/paper-dialog/0.4.0/
   files:
     paper-dialog-transition.css: paper-dialog-transition.css
     paper-dialog-transition.html: paper-dialog-transition.html
     paper-dialog.css: paper-dialog.css
     paper-dialog.html: paper-dialog.html
 paper-dropdown:
-  base: https://raw.githubusercontent.com/Polymer/paper-dropdown/master/
+  base: https://raw.githubusercontent.com/Polymer/paper-dropdown/0.4.0/
   files:
     paper-dropdown.css: paper-dropdown.css
     paper-dropdown.html: paper-dropdown.html
 paper-elements:
-  base: https://raw.githubusercontent.com/Polymer/paper-elements/0.3.5/
+  base: https://raw.githubusercontent.com/Polymer/paper-elements/0.4.0/
   files:
     paper-elements.html: paper-elements.html
 paper-fab:
-  base: https://raw.githubusercontent.com/Polymer/paper-fab/0.3.5/
+  base: https://raw.githubusercontent.com/Polymer/paper-fab/0.4.0/
   files:
     paper-fab.css: paper-fab.css
     paper-fab.html: paper-fab.html
 paper-focusable:
-  base: https://raw.githubusercontent.com/Polymer/paper-focusable/0.3.5/
+  base: https://raw.githubusercontent.com/Polymer/paper-focusable/0.4.0/
   files:
     paper-focusable.html: paper-focusable.html
 paper-icon-button:
-  base: https://raw.githubusercontent.com/Polymer/paper-icon-button/0.3.5/
+  base: https://raw.githubusercontent.com/Polymer/paper-icon-button/0.4.0/
   files:
     paper-icon-button.css: paper-icon-button.css
     paper-icon-button.html: paper-icon-button.html
 paper-input:
-  base: https://raw.githubusercontent.com/Polymer/paper-input/0.3.5/
+  base: https://raw.githubusercontent.com/Polymer/paper-input/0.4.0/
   files:
     paper-input.css: paper-input.css
     paper-input.html: paper-input.html
 paper-item:
-  base: https://raw.githubusercontent.com/Polymer/paper-item/0.3.5/
+  base: https://raw.githubusercontent.com/Polymer/paper-item/0.4.0/
   files:
     paper-item.css: paper-item.css
     paper-item.html: paper-item.html
 paper-menu-button:
-  base: https://raw.githubusercontent.com/Polymer/paper-menu-button/0.3.5/
+  base: https://raw.githubusercontent.com/Polymer/paper-menu-button/0.4.0/
   files:
     paper-menu-button-transition.css: paper-menu-button-transition.css
     paper-menu-button-transition.html: paper-menu-button-transition.html
     paper-menu-button.css: paper-menu-button.css
     paper-menu-button.html: paper-menu-button.html
 paper-progress:
-  base: https://raw.githubusercontent.com/Polymer/paper-progress/0.3.5/
+  base: https://raw.githubusercontent.com/Polymer/paper-progress/0.4.0/
   files:
     paper-progress.css: paper-progress.css
     paper-progress.html: paper-progress.html
 paper-radio-button:
-  base: https://raw.githubusercontent.com/Polymer/paper-radio-button/0.3.5/
+  base: https://raw.githubusercontent.com/Polymer/paper-radio-button/0.4.0/
   files:
     paper-radio-button.css: paper-radio-button.css
     paper-radio-button.html: paper-radio-button.html
 paper-radio-group:
-  base: https://raw.githubusercontent.com/Polymer/paper-radio-group/0.3.5/
+  base: https://raw.githubusercontent.com/Polymer/paper-radio-group/0.4.0/
   files:
     paper-radio-group.html: paper-radio-group.html
 paper-ripple:
-  base: https://raw.githubusercontent.com/Polymer/paper-ripple/0.3.5/
+  base: https://raw.githubusercontent.com/Polymer/paper-ripple/0.4.0/
   files:
     paper-ripple.html: paper-ripple.html
 paper-shadow:
-  base: https://raw.githubusercontent.com/Polymer/paper-shadow/0.3.5/
+  base: https://raw.githubusercontent.com/Polymer/paper-shadow/0.4.0/
   files:
     paper-shadow.css: paper-shadow.css
     paper-shadow.html: paper-shadow.html
 paper-slider:
-  base: https://raw.githubusercontent.com/Polymer/paper-slider/0.3.5/
+  base: https://raw.githubusercontent.com/Polymer/paper-slider/0.4.0/
   files:
     paper-slider.css: paper-slider.css
     paper-slider.html: paper-slider.html
 paper-tabs:
-  base: https://raw.githubusercontent.com/Polymer/paper-tabs/0.3.5/
+  base: https://raw.githubusercontent.com/Polymer/paper-tabs/0.4.0/
   files:
     paper-tab.css: paper-tab.css
     paper-tab.html: paper-tab.html
     paper-tabs.css: paper-tabs.css
     paper-tabs.html: paper-tabs.html
 paper-toast:
-  base: https://raw.githubusercontent.com/Polymer/paper-toast/0.3.5/
+  base: https://raw.githubusercontent.com/Polymer/paper-toast/0.4.0/
   files:
     paper-toast.css: paper-toast.css
     paper-toast.html: paper-toast.html
 paper-toggle-button:
-  base: https://raw.githubusercontent.com/Polymer/paper-toggle-button/0.3.5/
+  base: https://raw.githubusercontent.com/Polymer/paper-toggle-button/0.4.0/
   files:
     paper-toggle-button.css: paper-toggle-button.css
     paper-toggle-button.html: paper-toggle-button.html
 polymer:
-  base: https://cdnjs.cloudflare.com/ajax/libs/polymer/0.3.4/
+  base: https://raw.githubusercontent.com/Polymer/
   files:
-    platform.js: platform.js
-    platform.js.map: platform.js.map
-    polymer.html: data:text/html;charset=utf-8;base64,PHNjcmlwdCBzcmM9InBvbHltZXIuanMiPjwvc2NyaXB0Pg==
-    polymer.js: polymer.js
-    polymer.js.map: polymer.js.map
+    layout.html: polymer/0.4.0/layout.html
+    platform.js: platform/0.4.0/platform.js
+    platform.js.map: platform/0.4.0/platform.js.map
+    polymer.html: polymer/0.4.0/polymer.html
+    polymer.js: polymer/0.4.0/polymer.js
+    polymer.js.map: polymer/0.4.0/polymer.js.map
 web-animations-js:
   base: https://raw.githubusercontent.com/web-animations/web-animations-js/master/
   files:
     web-animations.js: web-animations.js
 x-gif:
-  base: https://raw.githubusercontent.com/geelen/x-gif/gh-pages/dist/
+  base: https://raw.githubusercontent.com/geelen/x-gif/0.1.1/dist/
   files:
     x-gif.html: x-gif.html

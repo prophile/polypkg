@@ -57,7 +57,7 @@ def get_latest_release(user, project):
     return data[0]['name']
 
 def use_latest_release(url):
-    match = re.match(r'https://raw\.githubusercontent\.com/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/master/(.*)$', url)
+    match = re.match(r'https://raw\.githubusercontent\.com/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/[^/]+/(.*)$', url)
     if match is None:
         return url
     # Get the latest release

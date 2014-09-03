@@ -10,6 +10,8 @@ from hammock import Hammock
 
 from copy import deepcopy
 
+RUN_UPGRADES = False
+
 urllib.parse.uses_relative.append('github')
 urllib.parse.uses_netloc.append('github')
 
@@ -59,19 +61,21 @@ def get_latest_release(user, project):
     return data[0]['name']
 
 def use_latest_release(url):
-    match = re.match(r'https://raw\.githubusercontent\.com/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/[^/]+/(.*)$', url)
+    match = re.match(r'https://raw\.githubusercontent\.com/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([^/]+)/(.*)$', url)
     if match is None:
         return url
     # Get the latest release
     user = match.group(1)
     project = match.group(2)
-    path = match.group(3)
+    old_ref = match.group(3)
+    path = match.group(4)
     # use the github API
     most_recent = get_latest_release(user, project)
     if most_recent is None:
         print("WARNING: cannot upgrade to a release for {}/{}, skipping".format(user, project))
         return url
-    print("Upgrading project {}/{} from master to tag {}".format(user, project, most_recent))
+    if old_ref != most_recent:
+        print("Upgrading project {}/{} from {} to {}".format(user, project, old_ref, most_recent))
     return "https://raw.githubusercontent.com/{user}/{project}/{tag}/{path}".format(user=user, project=project, tag=most_recent, path=path)
 
 def clean_package(value):
@@ -83,7 +87,8 @@ def clean_package(value):
     # Strip the github: URLs
     value['files'] = {fn: strip_github(url) for fn, url in value['files'].items()}
     # Refuse 'master' from github, use a release
-    value['files'] = {fn: use_latest_release(url) for fn, url in value['files'].items()}
+    if RUN_UPGRADES:
+        value['files'] = {fn: use_latest_release(url) for fn, url in value['files'].items()}
     prefix = os.path.commonprefix(value['files'].values())
     if '/' not in prefix:
         return backup

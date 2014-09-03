@@ -29,6 +29,8 @@ DEFAULT_DATABASE = os.path.join(os.path.dirname(__file__),
                                 'packages.yaml')
 VERSION = '0.0.1'
 
+DEFAULT_BASE = 'file://{}/'.format(os.getcwd())
+
 class PackageDatabase(Mapping):
     def __init__(self):
         self.packages = {}
@@ -82,8 +84,8 @@ def get(url, output):
             with open(output, 'wb') as f:
                 f.write(content)
         else:
-            raise KeyError('Could not retrieve {}, code={}'.format(url, response.status))
-    except httplib2.RelativeURIError:
+            raise ValueError('Could not retrieve {}, code={}'.format(url, response.status))
+    except (httplib2.RelativeURIError, KeyError):
         urlretrieve(url, output)
 
 def install_by_name(pkg_db, name, missing_dep=lambda x: None):
@@ -108,7 +110,7 @@ def install_by_name(pkg_db, name, missing_dep=lambda x: None):
                 os.makedirs(real_fn_dir)
         path = os.path.join(base, fn)
         print('  {} {}'.format(colored('•', 'green'), fn), file=sys.stderr)
-        get(urljoin(package.get('base', '.'), source), path)
+        get(urljoin(package.get('base', DEFAULT_BASE), source), path)
         if fn.endswith('.html'):
             # parse for import links
             dependencies.extend(get_dependencies(path))

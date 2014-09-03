@@ -243,6 +243,12 @@ firebase-simple-login:
   base: https://cdn.firebase.com/js/simple-login/1.6.3/
   files:
     firebase-simple-login.js: firebase-simple-login.js
+github-card:
+  base: https://raw.githubusercontent.com/pazguille/github-card/master/webcomponent/
+  files:
+    github-card.html: github-card.html
+    webcomponent/github.png: github.png
+    webcomponent/spinner.gif: spinner.gif
 paper-button:
   base: https://raw.githubusercontent.com/Polymer/paper-button/0.4.0/
   files:
